@@ -1,0 +1,29 @@
+
+  <div class="container">
+    <div class="con_content">
+      <div class="about_box">
+      <!--   <span>您现在的位置是：<a href="/" target="_blank">网站首页</a>>><a href="#" target="_blank">{$data.title}</a></span> -->
+        <div class="f_box">
+            <p class="title">{$data.title}</p>
+            <p class="desc">{$data.desc}</p>
+            <p class="p_title"></p>
+            <p class="box_p">
+                 <span>发布时间：{:date('Y-m-d H:i:s',$data.ctime)}</span>
+                 <span>作者：{$data.author}</span>
+                 <span>来源：{$data.source}</span>
+                 <span>点击：{$data.views}</span>
+            </p>
+          <!-- 可用于内容模板 -->
+          <div class="content">
+             {$data.content}
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  
+          
+
+        <!-- container代码 结束 -->
